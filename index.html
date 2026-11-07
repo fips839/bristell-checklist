@@ -1,6 +1,97 @@
-<script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js");
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bristell B23</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#101820;
+    color:white;
+    margin:0;
+    padding:20px;
 }
-</script>
-``
+
+h1{
+    text-align:center;
+}
+
+.card{
+    background:#1f2d3a;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.check{
+    padding:8px;
+}
+
+button{
+    padding:10px;
+    border:none;
+    border-radius:6px;
+    background:#1565c0;
+    color:white;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>✈️ Bristell B23 Checklist</h1>
+
+<div class="card">
+<h2>V-Speeds</h2>
+<ul>
+<li>Vy: 74 KIAS</li>
+<li>Vx: 62 KIAS</li>
+<li>Best Glide: 67 KIAS</li>
+<li>VFE: 82 KIAS</li>
+<li>VA: 100 KIAS</li>
+<li>VNE: 157 KIAS</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Before Take-Off</h2>
+
+<div class="check">
+<input type="checkbox"> Oil Temperature ≥ 50°C
+</div>
+
+<div class="check">
+<input type="checkbox"> Fuel Pump OFF
+</div>
+
+<div class="check">
+<input type="checkbox"> Fuel Selector LEFT
+</div>
+
+<div class="check">
+<input type="checkbox"> Altimeter SET
+</div>
+
+<div class="check">
+<input type="checkbox"> Canopy CLOSED & LOCKED
+</div>
+
+<div class="check">
+<input type="checkbox"> Rescue Pin REMOVED
+</div>
+
+<div class="check">
+<input type="checkbox"> Landing Light ON
+</div>
+
+<button onclick="alert('Checkliste abgeschlossen')">
+Fertig
+</button>
+
+</div>
+
+</body>
+</html>
